@@ -1,0 +1,103 @@
+@import '/src/styles/mixins.scss';
+@import '/src/styles/variable.scss';
+
+.footer {
+  height: 638px;
+  background-color: $black;
+  padding-block: 96px 24px;
+  color: $white;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+
+    & > a {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__links {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 24px;
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: $white;
+    text-decoration: none;
+  }
+
+  &__schedule {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 193px;
+  }
+
+  &__scheduleList {
+    list-style: none;
+  }
+
+  &__position {
+    padding-left: 23px;
+    position: relative;
+
+    & > svg {
+      position: absolute;
+      top: 3px;
+      left: -1px;
+    }
+  }
+
+  &__copyright {
+    @include secondaryText;
+  }
+
+  &__linksList {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  &__linksItem {
+    & > a {
+      color: $white;
+      text-decoration: none;
+    }
+  }
+
+  &__linksTitle {
+    @include h4;
+    margin-bottom: 16px;
+  }
+
+  &__quickLinks {
+    display: flex;
+    gap: 52px;
+    padding-right: 104px;
+  }
+
+  &__networks {
+    display: flex;
+    gap: 48px;
+    flex-direction: column;
+  }
+
+  &__networkLink {
+    display: flex;
+    gap: 5px;
+  }
+}

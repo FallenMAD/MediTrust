@@ -1,0 +1,60 @@
+@import '../../styles/variable.scss';
+@import '../../styles/mixins.scss';
+
+.section {
+  height: 396px;
+  display: flex;
+  gap: 24px;
+
+  &__pinkLayer {
+    width: 600px;
+    background-color: $pink;
+    border-radius: 0 100px 0 100px;
+    box-shadow: $box-shadow;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+  }
+
+  &__title {
+    width: 580px;
+    @include h2;
+    color: $black;
+
+    margin-bottom: 16px;
+  }
+
+  &__paragraph {
+    width: 580px;
+    @include mainText($line-height: 30px);
+    color: $darkBlack;
+
+    margin-bottom: 63px;
+  }
+
+  &__list {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+  }
+
+  &__itemTitle {
+    @include h2;
+    font-weight: 700;
+    color: $blue;
+  }
+
+  &__itemDes {
+    @include mainText($line-height: 30px);
+    color: $black;
+  }
+}

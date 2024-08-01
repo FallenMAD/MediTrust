@@ -1,0 +1,55 @@
+@import '/src/styles/mixins.scss';
+@import '/src/styles/variable.scss';
+
+.logo {
+  height: 70px;
+
+  &__logoImg {
+    display: flex;
+    gap: 4px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__item {
+    color: $black;
+    @include mainText($line-height: 0);
+    text-decoration: none;
+  }
+
+  &__img {
+    transition: $transition;
+    &:hover {
+      transform: scale($scale);
+    }
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 38px;
+  }
+
+  &__paragraph {
+    color: $grey;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 10%;
+  }
+
+  &__titleFooter {
+    color: $white;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 38px;
+  }
+
+  &__paragraphFooter {
+    color: $lightGrey;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 1px;
+  }
+}

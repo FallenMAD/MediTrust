@@ -1,0 +1,73 @@
+@import '../../styles/mixins.scss';
+@import '../../styles/variable.scss';
+
+.section {
+  height: 562px;
+  background-color: $violet;
+  border-radius: 24px;
+  padding: 40px;
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 24px;
+
+  &__description {
+    width: 560px;
+    padding-bottom: 58px;
+  }
+
+  &__title {
+    @include h1;
+    color: $black;
+    margin-bottom: 16px;
+  }
+
+  &__paragraph {
+    @include mainText($line-height: 30px);
+    color: $darkBlack;
+    margin-bottom: 40px;
+  }
+
+  &__strong {
+    color: $blue;
+  }
+
+  &__whiteLayer {
+    width: 560px;
+    height: 442px;
+    border-radius: 24px;
+    background-color: $white;
+    padding: 0 40px 40px;
+    position: relative;
+    box-shadow: $box-shadow;
+  }
+
+  &__blueLayer {
+    width: 480px;
+    height: 442px;
+    background-color: $mintBlue;
+    border-radius: 24px;
+    position: absolute;
+    top: -40px;
+    display: flex;
+    align-items: flex-end;
+    box-shadow: $box-shadow;
+  }
+
+  &__button {
+    background-color: $blue;
+    height: 56px;
+    width: 100%;
+    border-radius: 16px;
+    color: $white;
+    transition: $transition;
+    @include buttonsBold($line-height: 30px);
+    box-shadow: $box-shadow;
+
+    &:hover {
+      background-color: #1278a0;
+      transform: scale($scale);
+    }
+  }
+}

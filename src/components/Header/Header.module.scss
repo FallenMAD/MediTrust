@@ -1,0 +1,81 @@
+@import '../../styles/variable.scss';
+@import '../../styles/mixins.scss';
+
+.header {
+  height: 70px;
+
+  &__logoWrapper {
+    margin-right: 171px;
+  }
+
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__list {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    list-style: none;
+
+    margin-right: 38px;
+  }
+
+  &__link {
+    cursor: pointer;
+    transition: $transition;
+    box-shadow: 4px 5px 1px 1px $lightGrey2;
+    border-radius: 10px;
+
+    &:hover {
+      background-color: $lightGrey2;
+      border-radius: 10px;
+    }
+  }
+
+  &__item {
+    color: $black;
+    @include mainText($line-height: 0);
+    text-decoration: none;
+  }
+
+  &__page {
+    padding-inline: 10px;
+    display: block;
+    height: 70px;
+    line-height: 70px;
+  }
+
+  &__button {
+    width: 120px;
+    height: 56px;
+    border: 1px solid $blue;
+    border-radius: 16px;
+    color: $blue;
+    @include buttonsBold($line-height: 30px);
+    cursor: pointer;
+    transition: $transition;
+
+    &:hover {
+      transform: scale($scale);
+    }
+  }
+
+  &__buttonBlue {
+    color: $white;
+    background-color: $blue;
+  }
+
+  &__buttonList {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    list-style: none;
+  }
+}
+
+.active {
+  @include buttonsBold($line-height: 0);
+  transition: $transition;
+}

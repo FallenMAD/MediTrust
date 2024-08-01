@@ -1,0 +1,61 @@
+@import '../../styles/mixins.scss';
+@import '../../styles/variable.scss';
+
+.advantages {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+
+  &__list {
+    display: flex;
+    list-style: none;
+    gap: 24px;
+  }
+
+  &__item {
+    width: 392px;
+    height: 277px;
+    border-radius: 24px;
+    box-shadow: 0px 0px 10px 0px #0000001a;
+    padding: 16px 16px 46px;
+  }
+
+  &__img {
+    width: 68px;
+    height: 68px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+
+    margin-bottom: 16px;
+  }
+
+  &__title {
+    @include h2;
+    color: $black;
+  }
+
+  &__itemTitle {
+    @include h3;
+    color: $black;
+    margin-bottom: 12px;
+  }
+
+  &__description {
+    @include mainText($line-height: 30px);
+  }
+}
+
+.advantages__list li:nth-child(1) .advantages__img {
+  background-color: $pink;
+}
+
+.advantages__list li:nth-child(2) .advantages__img {
+  background-color: $mintBlue;
+}
+
+.advantages__list li:nth-child(3) .advantages__img {
+  background-color: $orange;
+}

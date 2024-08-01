@@ -1,0 +1,59 @@
+@mixin h1 {
+  font-weight: 700;
+  font-size: 54px;
+  line-height: 64.8px;
+}
+
+@mixin h2 {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 43.2px;
+}
+
+@mixin h3 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 28.8px;
+}
+
+@mixin h4 {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+@mixin buttons {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+@mixin buttonsBold($line-height: 0) {
+  font-weight: 700;
+  font-size: 20px;
+
+  @if $line-height != 0 {
+    line-height: $line-height;
+  }
+}
+
+@mixin mainText($line-height: 0) {
+  font-weight: 400;
+  font-size: 20px;
+
+  @if $line-height != 0 {
+    line-height: $line-height;
+  }
+}
+
+@mixin secondaryText {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+@mixin smallText {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+}

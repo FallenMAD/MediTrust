@@ -1,0 +1,11 @@
+.link {
+  width: 24px;
+  height: 24px;
+  fill: #1893c5;
+  transition: all 0.3s;
+  cursor: pointer;
+
+  &:hover {
+    fill: #33a9d8;
+  }
+}
