@@ -1,10 +1,10 @@
 import { FC, ReactNode } from 'react';
 
 type Props = {
-  cl: string;
+  cln: string;
   children: ReactNode;
 };
 
-export const Button: FC<Props> = ({ cl, children }) => {
-  return <button className={cl}>{children}</button>;
+export const Button: FC<Props> = ({ cln, children }) => {
+  return <button className={cln}>{children} </button>;
 };

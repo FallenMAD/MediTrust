@@ -1,0 +1,39 @@
+@import '/src/styles/variable.scss';
+@import '/src/styles/mixins.scss';
+
+.doctorsPage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__header {
+    width: 808px;
+    text-align: center
+  }
+
+  &__title {
+    @include h1;
+    color: $black;
+    margin-bottom: 16px;
+    color: $black;
+  }
+
+  &__highlighted {
+    color: $blue;
+  }
+
+  &__description {
+    @include mainText;
+    color: $darkGrey;
+    margin-bottom: 32px;
+  }
+
+  &__search {
+    width: 100%;
+  }
+
+  &__categories {
+    margin-bottom: 40px;
+  }
+}

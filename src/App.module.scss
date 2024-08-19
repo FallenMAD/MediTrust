@@ -51,10 +51,15 @@ button {
   justify-content: center;
   flex-direction: column;
   gap: 96px;
+  margin-bottom: 46px;
 }
 
 .title {
   @include buttons;
+}
+
+.search {
+  width: 600px;
 }
 
 .categories {

@@ -20,7 +20,7 @@ export const HealthyJourney = () => {
             and personalized attention.
           </p>
 
-          <Button cl={styles.section__button}>Book appointment</Button>
+          <Button cln={styles.section__button}>Book appointment</Button>
         </div>
         <div className={styles.section__whiteLayer}>
           <div className={styles.section__blueLayer}>

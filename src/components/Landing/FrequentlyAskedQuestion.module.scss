@@ -1,0 +1,99 @@
+@import '/src/styles/variable.scss';
+@import '/src/styles/mixins.scss';
+
+.faq {
+  width: 1224px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+
+  &__title {
+    @include h2;
+    margin-bottom: 8px;
+  }
+
+  &__wrapper {
+    width: 100%;
+    border: 1px solid $blue;
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 24px;
+    transition: all 0.5s ease-in-out;
+  }
+
+  &__answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease, opacity 0.5s ease;
+  }
+
+  &__question {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transition: all 0.5s ease-in-out;
+  }
+
+  &__generalTitle {
+    @include mainText($line-height: 30px);
+  }
+
+  &__text {
+    transition: opacity 0.5s ease;
+  }
+
+  &__arrow {
+    transform: rotate(180deg);
+  }
+
+  &__arrowUp {
+    animation: arrowUp 0.5s ease-in-out forwards;
+  }
+
+  &__arrowDown {
+    animation: arrowDown 0.5s ease-in-out forwards;
+  }
+}
+
+.faq__answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease, opacity 0.5s ease;
+}
+
+.faq__answer.faq__active {
+  padding-top: 16px;
+  max-height: 245px;
+  transition: max-height 0.5s ease, opacity 0.5s ease; // Велике значення для забезпечення повного розгортання
+}
+
+.faq__wrapper.faq__active {
+  background-color: $lightBlue;
+}
+
+.faq__question.faq__active {
+  padding-bottom: 16px;
+  border-bottom: 1px solid $blue;
+}
+
+@keyframes arrowUp {
+  0% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes arrowDown {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}

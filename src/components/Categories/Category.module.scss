@@ -1,0 +1,32 @@
+@import '/src/styles/variable.scss';
+@import '/src/styles/mixins.scss';
+
+.category {
+  list-style: none;
+  
+  &__btn {
+    width: 288px;
+    background-color: $lightGrey2;
+    height: 56px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    transition: $transition;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $lightGrey;
+    }
+
+    &:focus {
+      background-color: $orange;
+    }
+  }
+
+  &__title {
+    @include mainText;
+    color: $black;
+  }
+}
