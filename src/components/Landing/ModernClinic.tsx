@@ -2,19 +2,9 @@ import style from './ModernClinic.module.scss';
 
 import { Container } from '../../UI';
 import homeImage from '../../assets/homeImageSVG1.svg';
-
-type Advantages = {
-  title: string;
-  description: string;
-};
+import { clinicAdvantages } from '../../constants/clinicAdvantages';
 
 export const ModernClinic = () => {
-  const advantages: Advantages[] = [
-    { title: '300K', description: 'Happy patients' },
-    { title: '10K', description: 'Monthly visits' },
-    { title: '100', description: 'Qualified doctors' },
-  ];
-
   return (
     <Container>
       <section className={style.section}>
@@ -34,7 +24,7 @@ export const ModernClinic = () => {
           </p>
 
           <ul className={style.section__list}>
-            {advantages.map(({ title, description }) => (
+            {clinicAdvantages.map(({ title, description }) => (
               <li className={style.section__item}>
                 <span className={style.section__itemTitle}>{title}</span>
                 <p className={style.section__itemDes}>{description}</p>

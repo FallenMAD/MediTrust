@@ -1,16 +1,15 @@
 import cn from 'classnames';
 
 import style from './Footer.module.scss';
+import { Networks } from './Networks';
+import { Policies } from './Policies';
+import { QuickLinks } from './QuickLinks';
 
 import BuildingSVG from '../../../public/buidingFooter.svg';
 import CalendarSVG from '../../../public/calendar.svg';
 import PhoneSVG from '../../../public/phone.svg';
 import { Container, Icon } from '../../UI';
 import { Logo } from '../Header/Logo';
-import { QuickLinks } from './QuickLinks';
-import { Policies } from './Policies';
-import { Networks } from './Networks';
-
 
 export const Footer = () => {
   return (

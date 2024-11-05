@@ -1,11 +1,11 @@
 import styles from '../../App.module.scss';
 import {
+  Blog,
   FrequentlyAskedQuestions,
   HealthyJourney,
   HowPlatformWorks,
   ModernClinic,
   OurAdvantages,
-  Blog
 } from '../../components/Landing/';
 import { TopDoctors } from '../../components/Landing/TopDoctors';
 import { RequestCallback } from '../../components/RequestCallback';
@@ -14,8 +14,7 @@ import { Search } from '../../components/Search';
 export const HomePage = () => {
   return (
     <div>
-      <h1 className={styles.title}>HomePage</h1>
-      <Search cln={styles.search}/>
+      <Search cln={styles.search} />
 
       <div className={styles.main}>
         <HealthyJourney />
@@ -30,3 +29,5 @@ export const HomePage = () => {
     </div>
   );
 };
+
+export default HomePage;

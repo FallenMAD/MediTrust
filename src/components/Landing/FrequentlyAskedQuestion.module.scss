@@ -28,7 +28,9 @@
   &__answer {
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.5s ease, opacity 0.5s ease;
+    transition:
+      max-height 0.5s ease,
+      opacity 0.5s ease;
   }
 
   &__question {
@@ -62,13 +64,17 @@
 .faq__answer {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.5s ease, opacity 0.5s ease;
+  transition:
+    max-height 0.5s ease,
+    opacity 0.5s ease;
 }
 
 .faq__answer.faq__active {
   padding-top: 16px;
   max-height: 245px;
-  transition: max-height 0.5s ease, opacity 0.5s ease; // Велике значення для забезпечення повного розгортання
+  transition:
+    max-height 0.5s ease,
+    opacity 0.5s ease; // Велике значення для забезпечення повного розгортання
 }
 
 .faq__wrapper.faq__active {

@@ -1,7 +1,8 @@
 import { FC } from 'react';
 
-import { Categories } from './Categories';
 import styles from './Category.module.scss';
+
+import { Categories } from '../../constants/categories';
 import { Button } from '../Button';
 
 type CategoryProps = {

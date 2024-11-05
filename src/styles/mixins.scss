@@ -57,3 +57,19 @@
   font-size: 14px;
   line-height: 21px;
 }
+
+@mixin btnPrimary {
+  background-color: $blue;
+  height: 56px;
+  width: 100%;
+  border-radius: 16px;
+  color: $white;
+  transition: $transition;
+  @include buttonsBold($line-height: 30px);
+  box-shadow: $box-shadow;
+
+  &:hover {
+    background-color: #1278a0;
+    transform: scale($scale);
+  }
+}

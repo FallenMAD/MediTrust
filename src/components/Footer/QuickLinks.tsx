@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+
 import style from './Footer.module.scss';
 
 export const QuickLinks = () => {
@@ -22,7 +23,7 @@ export const QuickLinks = () => {
           <a href="frequenly_question">Frequenly asked question</a>
         </li>
         <li className={style.footer__linksItem}>
-          <a href="#blog">Blog</a>
+          <a href="/home/blog">Blog</a>
         </li>
         <li className={style.footer__linksItem}>
           <Link to="/contacts">Visit & Contact us</Link>

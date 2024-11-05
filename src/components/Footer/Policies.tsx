@@ -1,10 +1,6 @@
 import style from './Footer.module.scss';
 
-const policies: { title: string }[] = [
-  { title: 'Privacy policy' },
-  { title: 'Terms & Conditions' },
-  { title: 'Cookie policy' },
-];
+import { policies } from '../../constants/policy';
 
 export const Policies = () => {
   return (

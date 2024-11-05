@@ -22,7 +22,7 @@ export const Header = () => {
 
   return (
     <Container>
-      <header className={styles.header}>
+      <header className={styles.header} style={{}}>
         <nav className={styles.header__nav}>
           <div className={styles.header__logoWrapper}>
             <Logo />

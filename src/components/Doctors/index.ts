@@ -1,2 +1,3 @@
 export * from './Doctors';
-export * from './Doctor';
+export * from './DoctorCard';
+export * from './DoctorDetailCard';
