@@ -1,6 +1,6 @@
 import { FC } from 'react';
 
-import { BlogData } from './Blog';
+import { BlogData } from '../../../constants';
 import style from './BlogItem.module.scss';
 
 type Props = {
